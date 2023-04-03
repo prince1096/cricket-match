@@ -68,11 +68,8 @@ const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const team1 = document.querySelector(".team1_div");
 
-array1.map(
-  (number, index) =>
-    (team1.innerHTML += (
-      <li>
-        `player ${index + 1} out at ${number}`
-      </li>
-    ))
-);
+array1.map((number, index) => (
+  <li>
+    (team1.innerHTML += ( `player ${index + 1} out at ${number}` ))
+  </li>
+));
